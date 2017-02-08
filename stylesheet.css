@@ -1,13 +1,18 @@
+body{
+    background-color: darkcyan;
+}
 h1{
     text-align: right;
 }
+
 
 .parallax1 {
     /* The image used */
     background-image: url("img/para1.jpg");
 
     /* Set a specific height */
-    height: 500px;
+    height: 800px;
+
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -20,7 +25,7 @@ h1{
     background-image: url("img/para2.jpg");
 
     /* Set a specific height */
-    height: 500px;
+    height: 800px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -33,9 +38,38 @@ h1{
     background-image: url("img/para3.jpg");
 
     /* Set a specific height */
-    height: 500px;
+    height: 800px;
 
     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.roundednav{
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid black;
+    background:white;
+    padding: 20px;
+    width: 80px;
+    height: 110px;
+    bottom: 10px;
+    left: 25px;
+    font-size: 18px;
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+.container {
+    position: relative;
+}
+.movingtable{
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
