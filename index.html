@@ -1,60 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<!--- HEADER START--->
+
     <head>
         <title>Katherine Polys</title>
-        <link rel="shortcut icon" type="image/x-icon" href="img/icon.jpg" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo.jpg" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     </head>
+<!--SWATCH COLORS: https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958-->
+<body data-spy="scroll" data-target=".navbar" data-offset="20">
 
-<div class="parallax" id="para1">
-        <div id="home">
-            <h1>HOME</h1>
-            <div class="container">
-                <p class="roundednav">
-                    <a href="#home" title="Next Section" >home</a>
-                    <a href="#about" title="Next Section" >about</a>
-                    <a href="#contact" title="Next Section">resume</a>
-                    <a href="#projects" title="Next Section">projects</a>
-                    <a href="#contact" title="Next Section">contact</a>
-                </p>
+            <div class="parallax" id="para1">
+                <div id="home">
+                    <!--The Navigation Section-->
+                    <nav class="navbar affix">
+                        <div class="container">
+                           <div class="row">
+                               <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+                                  <ul class="roundednav nav nav-pills nav-stacked">
+                                      <li class="active"><a data-scroll href="#home">Home</a></li>
+                                      <li><a data-scroll href="#about">About</a></li>
+                                      <li><a data-scroll href="#resume">Resume</a></li>
+                                      <li><a data-scroll href="#projects">Projects</a></li>
+                                      <li><a data-scroll href="#contact">Contact</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-fixed-top">
+                    <div class="container">
+                        <div class="well hidden-lg hidden-md hidden-sm">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">&#9776
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu navbar-fixed-top">
+                            <li class="active"><a data-scroll href="#home">Home</a></li>
+                            <li><a data-scroll href="#about">About</a></li>
+                            <li><a data-scroll href="#resume">Resume</a></li>
+                            <li><a data-scroll href="#projects">Projects</a></li>
+                                    <li><a data-scroll href="#contact">Contact</a></li>
+                        </ul>
+                        </div></div>
+                    </nav>
+
+                    <!--End Navigation Section-->
+                    <h1>HOME</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-l offset col-lg-offset-11 col-md-1 col-md-offset-9 col-sm-3 col-sm-offset-8 col-xs-1 col-xs-offset-6">
+                            <img class="img-rounded" align="right" src="img/logo.jpg" alt="KP logo" height="449" />
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </div>
-</div>
+            </div>
 
 
     <div id="about">
-        <h1>ABOUT</h1>
-        <p class="profilephoto"></p>
+        <h1> </h1>
+        <div class ="container">
+            <div class="row">
+                <div class = "well col-lg-offset-1 col-lg-6">
+                    <h4 style="font-family: 'Raleway', sans-serif;" >Hello! I'm Katherine Polys, who also goes by Kat. I am graduating from
+                    Augsburg College in the Spring of 2017 with a bachelors of science in
+                    computer science. I have a huge interest in website development and the
+                    creation of websites.<br>
+                        <br>I can be contacted at katherinepolys@gmail.com</h4>
+                </div>
+                <div class="col-lg-offset-1 col-lg-3 hidden-xs">
+                     <div class="profilephoto"></div>
+                </div>
+        </div>
+    </div>
     </div>
 
-<div class="parallax" id="para2">
+<div class="parallax" id="parallax">
     <div id="resume">
-        <h1>RESUME</h1>
-    </div>
+        <!--Resume Section-->
+        <div class ="container">
+            <div class="row">
+                <div class = "hidden-xs col-lg-offset-1 ">
+                    <embed src="Resume.pdf" width="700" height="700"></embed>
+                </div>
+                <div class = "col-lg-offset-1">
+                    <a href="Resume.pdf" download><button type="button" class="btn"> DOWNLOAD RESUME </button></a>
+                </div>
+                </div>
+        </div>
+            <div class="well hidden-lg hidden-md col-sm-12 col-xs-12">
+                <h4>Katherine Polys<br></h4>
+                108 Franklin Ave. W P.O. Box 213<br>
+                (612) 219-9030<br>
+                KatherinePolys@gmail.com<br>
+                <h3>Summary:</h3>
+                More than 7 years programming and application development experience.<br>
+                <h3>Computer Skills:</h3>
+                <h4>Languages</h4><ul>
+                <li>Java, Scheme, C++,SQL, HTML, JavaScript, CSS, Racket, Python</li></ul>
+                <h4>Software</h4><ul>
+                <li>Microsoft Office Products, Unix Systems, GIMP, Windows Systems, Adobe products, IDE Products</li></ul>
+                <h3>Experience:</h3>
+                <h4>Participated in Midwest Instruction and Computing Symposium</h4>
+                <h5>MICS</h5>
+                <ul>
+                    <li>After Programming prompts were given, had to generate as much code as possible in four hours</li>
+                </ul>
+                <h4>AugSem Student Leader</h4>
+                <h5>Augsburg</h5>
+                <ul>
+                    <li>Assisted freshmen students in adjusting to college student life</li>
+                    <li>Facilitated weekly meetings/check-ins with incoming freshman students activities designed to support student engagement</li>
+                    <li>Assisted in planning and implementation of group activies</li>
+                </ul>
+                <h4>Saltwater Comet Literary Journal</h4>
+                <h5>Perpich Center for Arts Education</h5>
+                <ul>
+                    <li>A compilation of poetry from high school students throughout the state of Minnesota</li>
+                    <li>Reached out to schools to seek entries</li>
+                    <li>Prioritized activities to ensure successful completion and publication of a compilation of poetry</li>
+                    <li>Edited the work sent in</li>
+                    <li>Provided feedback</li>
+                    <li>Assisted in oversite of all aspects of book production</li>
+                </ul>
+                <h4>Teen Outreach Program</h4>
+                <h5>Wyman</h5>
+                <ul>
+                    <li>Planned and participated in regularly scheduled volunteer events</li>
+                    <li>Assisted in developing activities to promote student growth and engagement</li>
+                    <li>Served as academic and emotional support to identified teens</li>
+                </ul>
+                <h3>Education:</h3>
+                Augsburg College<br>
+                Minneapolis, Minnesota<br>
+                Bachelor of Science in Computer, expected April 2017 with a GPA of 2.945<br>
+            </div>
+            </div>
 </div>
+        <!--End Resume-->
 
 
 
         <div id="projects">
-            <h1>PROJECTS</h1>
+            <div class="container">
+            <div class="row">
+                <h1>PROJECTS</h1>
+                <div class="container">
+                    <div class = "row">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+                <img src="/../img/para3.jpg" alt =" temp" height="500px" />
+            </div>
+            </div>
         </div>
 
-<div class="parallax" id="para3">
-    <div id="contact"><center>
-        <h1>CONTACT</h1>
-        <h1>katherinepolys@gmail.com</h1>
-        <div class="contact1"></div>
-        <div class="contact2"></div>
-        <div class="contact3"></div>
-    </center>
+<div class="parallax">
+    <div id="contact">
+        <!--Contact Section-->
+        <div class="container">
+            <div class="row">
+                <div class="well">
+                    <h4> Contact me at: katherinepolys@gmail.com</h4>
+                </div>
+                <a href="https://github.com/katpolys"><div class="contact1 col-lg-2 col-lg-offset-3 col-xs-2 col-xs-offset-2"></div></a>
+                <div class="contact2 col-lg-2 col-lg-offset-1 col-xs-2 col-xs-offset-4"></div>
+                <a href="https://bitbucket.org/KatPolys/"><div class="contact3 col-lg-2 col-lg-offset-1 col-xs-2 col-xs-offset-6"></div></a>
+            </div>
+        </div>
+        <!--End Contact Section-->
+
     </div>
 </div>
-
-
-
-
+            <script src="assets/js/jquery-2.1.4.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/smooth-scroll.js"></script>
+            <script>smoothScroll.init();</script>
 
 
 </body>

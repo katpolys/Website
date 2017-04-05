@@ -1,77 +1,79 @@
 body{
-    background-color: darkcyan;
+    z-index: -1;
+    background-color: #364958;
 }
 h1{
-    text-align: right;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+li{
+    list-style-type: none;
 }
 
-
-.parallax1 {
-    /* The image used */
-    background-image: url("img/para1.jpg");
-
-    /* Set a specific height */
-    height: 800px;
-
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.imagelowerleft{
+    position: relative;
+    bottom: -425px;
+    z-index: auto;
+}
+.parallax {
     background-size: cover;
+    z-index: auto;
+    background: url("img/para1.jpg") no-repeat fixed center;
 }
-.parallax2 {
-    /* The image used */
-    background-image: url("img/para2.jpg");
 
-    /* Set a specific height */
-    height: 800px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax3 {
-    /* The image used */
-    background-image: url("img/para3.jpg");
-
-    /* Set a specific height */
-    height: 800px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.roundednav{
+.roundednav {
     text-align: center;
     border-radius: 15px;
-    border: 2px solid black;
-    background:white;
-    padding: 20px;
-    width: 80px;
-    height: 110px;
-    bottom: 10px;
-    left: 25px;
-    font-size: 18px;
+    background: #DCDCDD;
+    width: 180px;
+    height: 250px;
+    font-size: 20px;
     position: fixed;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
+    top: 450px;
+    z-index:10;
 }
-.container {
-    position: relative;
-}
-.movingtable{
-    position: fixed;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.profilephoto{
+    width: 250px;
+    height: 250px;
+    background: url("img/profile.png") center;
     background-size: cover;
+    -moz-border-radius: 125px;
+    -webkit-border-radius: 125px;
+    border-radius: 125px;
+    z-index: auto;
+}
+.contact1{
+    width: 150px;
+    height: 150px;
+    background-image:url("img/github.jpeg");
+    background-size: 270%;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    z-index: auto;
+}
+.contact2{
+    width: 150px;
+    height: 150px;
+    background: url("img/LinkedIn.jpg") center;
+    background-size: 125%;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    z-index: auto;
+}
+.contact3 {
+    width: 150px;
+    height: 150px;
+    background: url("img/Bitbucket.png") center;
+    background-size: cover;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    z-index: auto;
 }
