@@ -50,7 +50,7 @@ li{
 .contact1{
     width: 150px;
     height: 150px;
-    background-image:url("img/github.jpeg");
+    background: url("img/github.jpeg") center;
     background-size: 270%;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
