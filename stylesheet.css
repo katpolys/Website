@@ -24,7 +24,9 @@ li{
     z-index: auto;
     background: url("img/para1.jpg") no-repeat fixed center;
 }
-
+well{
+    z-index: 4;
+}
 
 .roundednav {
     text-align: center;
@@ -34,8 +36,8 @@ li{
     height: 250px;
     font-size: 20px;
     position: fixed;
-    top: 450px;
-    z-index:10;
+    top: 400px;
+    z-index:100;
 }
 .profilephoto{
     width: 250px;
