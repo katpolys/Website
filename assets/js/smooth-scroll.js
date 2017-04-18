@@ -1,10 +1,3 @@
-/*!
- * smooth-scroll v10.2.1: Animate scrolling to anchor links
- * (c) 2016 Chris Ferdinandi
- * MIT License
- * http://github.com/cferdinandi/smooth-scroll
- */
-
 (function (root, factory) {
 	if ( typeof define === 'function' && define.amd ) {
 		define([], factory(root));
@@ -13,7 +6,7 @@
 	} else {
 		root.smoothScroll = factory(root);
 	}
-})(typeof global !== 'undefined' ? global : this.window || this.global, (function (root) {
+})(typeof global !== 'undefined' ? global : this.window || this.global, function (root) {
 
 	'use strict';
 
@@ -342,7 +335,7 @@
 			// Get the height of a fixed header if one exists and not already set
 			headerHeight = getHeaderHeight( fixedHeader );
 		}
-		var endLocation = isNum ? anchor : getEndLocation( anchorElem, headerHeight, parseInt(animateSettings.offset, 10) ); // Location to scroll to
+		var endLocation = isNum ? anchor : getEndLocation( anchorElem, headerHeight, parseInt((typeof animateSettings.offset === 'function' ? animateSettings.offset() : animateSettings.offset), 10) ); // Location to scroll to
 		var distance = endLocation - startLocation; // distance to travel
 		var documentHeight = getDocumentHeight();
 		var timeLapsed = 0;
@@ -512,10 +505,10 @@
 	 */
 	var resizeThrottler = function (event) {
 		if ( !eventTimeout ) {
-			eventTimeout = setTimeout((function() {
+			eventTimeout = setTimeout(function() {
 				eventTimeout = null; // Reset timeout
 				headerHeight = getHeaderHeight( fixedHeader ); // Get the height of a fixed header if one exists
-			}), 66);
+			}, 66);
 		}
 	};
 
@@ -580,4 +573,4 @@
 
 	return smoothScroll;
 
-}));
+});
